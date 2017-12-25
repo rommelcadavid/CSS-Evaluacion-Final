@@ -1,0 +1,176 @@
+html, body{
+  width: 100%;
+  background-color: black;
+  font-family: 'Dancing Script';
+  text-align: center;
+  color: white;
+}
+
+.contenedorppl{
+  width: 900px;
+  margin: auto;
+}
+
+
+header{
+
+  background-color:  #5b7989  ;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: row;
+  animation: slideIn 3s;
+}
+
+.Nombrepagina{
+  text-shadow:  2px 2px #02010a;
+  margin: auto;
+}
+
+header nav{
+  margin: auto;
+  color: white;
+}
+
+header nav a{
+    color: white;
+}
+
+.paginaactual{
+    text-decoration: none;
+}
+
+
+
+section.Imagenppl{
+    text-align: center;
+    background-color: #d5c75f;
+    width: 100%;
+}
+
+.fila1, .fila2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+}
+
+.fila1 img, .fila2 img{
+    width: 30%;
+    height: 25%;
+    box-shadow: 2px 2px 2px black;
+    margin: auto;
+
+}
+.fila1{
+    padding: 30px 0 0 0;
+}
+.fila2{
+    padding: 30px 0 30px 0;
+}
+
+.letra{
+  text-align: center;
+  font-size: 20px;
+  color: black;
+}
+
+#imagen1{
+  filter: blur(10px);
+}
+
+#imagen2, #imagen4, #imagen6{
+  filter: grayscale(100%);
+
+}
+
+#imagen3{
+  filter: sepia(90%);
+}
+
+
+
+.contenedor3{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background: #C6d5c5;
+  border-radius: 0 0 10px 10px;
+}
+.contacto{
+  /* width:25%; */
+  flex-grow: 1;
+  color: black;
+  flex-direction: column;
+
+}
+.termino{
+  /* width:25%; */
+  flex-grow: 1;
+  color: black;
+  flex-direction: column;
+}
+.redes{
+  /* width:25%; */
+  flex-grow: 1;
+  color: black;
+  flex-direction: column;
+}
+.derechos{
+  /* width:25%; */
+  flex-grow: 1;
+  color: black;
+  flex-direction: column;
+
+}
+
+.imgiconos{
+  width: 20px;
+  height: 20px;
+}
+
+@keyframes slideIn {
+    0%{ margin-top:150%;
+    }
+    60%{ margin-top:-5%;
+    }
+    100%{ margin-top:0%;
+    }
+}
+
+@media (max-width: 900px) {
+    .contenedorppl{
+        width: 100%;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .fila1 {
+      display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .fila2 {
+      display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .fila1 img, .fila2 img{
+           width: 80%;
+           height: 80%;
+           box-shadow: 2px 2px 2px black;
+           /* padding: 10px 0 0 0; */
+       }
+
+    footer.contenedor3{
+        display: flex;
+        flex-direction: column;
+    }
+      .contacto .termino .redes .derechos{
+      margin: auto;
+      width:100%;
+    }
+}
